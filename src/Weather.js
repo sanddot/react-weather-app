@@ -10,23 +10,27 @@ export default function Weather() {
             type="search"
             placeholder="Enter a city..."
             className="form-control"
+            autoFocus="on"
           />
           <input type="submit" value="Search" className="btn btn-primary" />
         </div>
       </form>
       <h1>Paris</h1>
       <ul>
-        <li>Saturday</li>
+        <li>Saturday 11:00</li>
         <li>Mostly Sunny</li>
       </ul>
-      <div className="row">
+      <div className="row mt-4">
         <div className="col-6">
-          <img
-            src="https://icons.twnmm.com/wx_icons/v2/3.svg"
-            alt="mostly sunny icon"
-            className="current-weather-icon"
-          />
-          10ºC
+          <div className="wrapper">
+            <img
+              src="https://icons.twnmm.com/wx_icons/v2/3.svg"
+              alt="mostly sunny icon"
+              className="current-weather-icon"
+            />
+            <span className="temperature">6</span>
+            <span className="unit">ºC</span>
+          </div>
         </div>
         <div className="col-6">
           <ul>

@@ -1,10 +1,50 @@
 .Weather {
   border: 1px solid #dadde1;
+  border-radius: 5px;
+  padding: 16px;
 }
-.Weather .current-weather-icon {
-  width: 50px;
-  height: 50px;
+.Weather h1 {
+  font-size: 34px;
+  font-weight: 100;
+  line-height: 35px;
+  margin: 20px 0 10px 0;
+}
+.Weather ul {
+  margin: 0;
+  padding: 0;
+}
+.Weather li {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+  list-style: none;
 }
 .Weather .search-fields {
   display: flex;
+}
+.Weather .form-control {
+  width: 75%;
+}
+.Weather .btn {
+  margin-left: 5px;
+  width: 25%;
+}
+.wrapper {
+  display: flex;
+  color: rgb(33, 33, 33);
+  align-items: center;
+}
+.Weather .current-weather-icon {
+  width: 75px;
+  height: 75px;
+}
+.Weather .temperature {
+  font-size: 75px;
+  line-height: 75px;
+  margin-left: 5px;
+}
+.Weather .unit {
+  font-size: 16px;
+  margin-left: 5px;
+  align-self: flex-start;
 }
