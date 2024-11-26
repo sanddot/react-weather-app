@@ -1,0 +1,6 @@
+.WeatherForecast {
+  text-align: center;
+}
+.WeatherForecast .day-low-temperature {
+  margin-left: 5px;
+}
