@@ -20,6 +20,7 @@ export default function Weather(props) {
       description: response.data.condition.description,
       date: new Date(response.data.time * 1000),
       city: response.data.city,
+      coordinates: response.data.coordinates,
     });
   }
   function search() {
@@ -52,7 +53,7 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-        <WeatherForecast />
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
